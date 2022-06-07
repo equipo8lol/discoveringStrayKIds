@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=2">	
+	<br><title align=center>&#128147;How well do you know Stray Kids?&#128147;</title>
+	<!--Logo-->
+	<img src="https://lv2-cdn.azureedge.net/straykids/cbc5d19a62f94f5ea370a9025bf61e89-%EC%9E%90%EC%82%B0%201.png" class="skzlogo" WIDTH=80 HEIGHT=50>
+  <link rel="shortcut icon" href="https://lv2-cdn.azureedge.net/straykids/cbc5d19a62f94f5ea370a9025bf61e89-%EC%9E%90%EC%82%B0%201.png"/>
+
+	 <script>
+	 	//Es como un alert que se presenta mientras la página carga
+        window.onload=function(){alert('Welcome STAY! Prove how well do you know Stray Kids! Here are some questions:)) Have fun!');}
+        window.onunload=function(){alert('THANKS FOR VISITING!!');}
+    </script>
+
+    <style type="text/css">
+    	/*Son los margenes de la imagen con  nombre skzlogo*/
+       img.skzlogo {
+  float: left;
+  margin-right: 100px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+ } 
+
+    </style>
+</head>
+<body>
+	<style type="text/css">
+
+    /*Margen de la página*/
+		body {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  /*tamaño de la pagina*/
+  height: 900px;
+}
+   /*clase del menú, es para que el menu se vea de manera horizontal*/
+	ul.horizontal li{
+	display:block;
+	float:left;
+
+	padding: 10px;
+}
+  /*es pára que los links no salgan subrayados ni azules*/
+a { text-decoration: none; 
+    color: black;} 
+
+ul.redes li{
+    list-style: none;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+
+</style>
+
+
+      <!--código para el menú-->
+	<ul class="horizontal" align=left>
+    <li><a href="C:\Users\erika\Downloads\proyecto.html"><font face="LEMON MILK light" color="black">HOME</font></a></li>
+    <li><a href="C:\Users\erika\OneDrive\Desktop\4AmPr\CPW\DAEC\albums.html"><font face="LEMON MILK light">DISCOGRAPHY</font></a></li>
+    <li><a href="C:\Users\erika\Downloads\members.html"><font face="LEMON MILK light">MEMBERS</font></a></li>
+    <li><a href="C:\Users\erika\Downloads\formulario.html"><font face="LEMON MILK light">QUIZ</font></a></li>
+</ul>	
+<br><br>
+	
+	<script type="text/javascript">
+
+		//Inicia la función
+		function preguntas(){
+			//Pregunta 1
+			var pre1=document.getElementById("pre1").value;
+			//TRUE=CORRECTO FALSE=INCORRECTO
+			//1=correcto 2=incorrecto 3=incorrecto 4=incorrecto
+			if(a1.checked==true && a2.checked==false && a3.checked==false && a4.checked==false){
+				//Se utilizar para poder manipular el contenido del id 
+				document.getElementById("pre1").innerHTML="Correcto";
+				document.getElementById("pre1").style.color= "green";
+			} else {
+				document.getElementById("pre1").innerHTML="Incorrecto";
+				document.getElementById("pre1").style.color = "red";
+			}
+			//Pregunta 2
+			var pre2=document.getElementById("pre2").value;
+			if(b1.checked==false && b2.checked==false && b3.checked==true && b4.checked==false){
+				document.getElementById("pre2").innerHTML="Correcto";
+				document.getElementById("pre2").style.color= "green";
+			} else {
+				document.getElementById("pre2").innerHTML="Incorrecto";
+				document.getElementById("pre2").style.color = "red";
+			}
+				//Pregunta 3
+			var pre3=document.getElementById("pre3").value;
+			if(c1.checked==false && c2.checked==false && c3.checked==false && c4.checked==true){
+				document.getElementById("pre3").innerHTML="Correcto";
+				document.getElementById("pre3").style.color= "green";
+			} else {
+				document.getElementById("pre3").innerHTML="Incorrecto";
+				document.getElementById("pre3").style.color = "red";
+			}
+			//Pregunta 4
+			var pre4=document.getElementById("pre4").value;
+			if(d1.checked==false && d2.checked==true && d3.checked==false && d4.checked==false){
+				document.getElementById("pre4").innerHTML="Correcto";
+				document.getElementById("pre4").style.color= "green";
+			} else {
+				document.getElementById("pre4").innerHTML="Incorrecto";
+				document.getElementById("pre4").style.color = "red";
+			}
+			//Pregunta 5
+			var pre5=document.getElementById("pre5").value;
+			if(e1.checked==false && e2.checked==false && e3.checked==true && e4.checked==false){
+				document.getElementById("pre5").innerHTML="Correcto";
+				document.getElementById("pre5").style.color= "green";
+			} else {
+				document.getElementById("pre5").innerHTML="Incorrecto";
+				document.getElementById("pre5").style.color = "red";
+			}
+			//Pregunta 6
+			var pre6=document.getElementById("pre6").value;
+			if(f1.checked==false && f2.checked==true && f3.checked==false && f4.checked==false){
+				document.getElementById("pre6").innerHTML="Correcto";
+				document.getElementById("pre6").style.color= "green";
+			} else {
+				document.getElementById("pre6").innerHTML="Incorrecto";
+				document.getElementById("pre6").style.color = "red";
+			}
+				//Pregunta 7
+			var pre7=document.getElementById("pre7").value;
+			if(g1.checked==false && g2.checked==false && g3.checked==true){
+				document.getElementById("pre7").innerHTML="Correcto";
+				document.getElementById("pre7").style.color= "green";
+			} else {
+				document.getElementById("pre7").innerHTML="Incorrecto";
+				document.getElementById("pre7").style.color = "red";
+			}
+			//Pregunta 8
+			var pre8=document.getElementById("pre8").value;
+			if(h1.checked==true && h2.checked==false && h3.checked==false && h4.checked==false){
+				document.getElementById("pre8").innerHTML="Correcto";
+				document.getElementById("pre8").style.color= "green";
+			} else {
+				document.getElementById("pre8").innerHTML="Incorrecto";
+				document.getElementById("pre8").style.color = "red";
+			}
+		}
+	</script>
+</head>
+<body>
+	<!--Título-->
+	<h2><center><font face="LEMON MILK light">Questions that you need to know if you are stay</font></h2><hr>
+
+	<br><center><img height="200" width="200" src="C:\Users\erika\Downloads\jyp.png">
+
+	<h2><center><font face="LEMON MILK light" size="2">1.- Which company does Stray Kids belongs to?</font></h2>
+	<input type="checkbox" id="a1"><font face="Louis George Cafe">JYP</font><br>
+	<input type="checkbox" id="a2"><font face="Louis George Cafe">YG</font><br>
+	<input type="checkbox" id="a3"><font face="Louis George Cafe">HYBE</font><br>
+	<input type="checkbox" id="a4"><font face="Louis George Cafe">CUBE</font><br>
+	<div id=pre1></div>
+
+    <br>
+
+    <img height="200" width="200" src="https://i.pinimg.com/564x/cc/a4/e8/cca4e80dab700680140ea9bd3e5e7787.jpg">
+    <h2><font face="LEMON MILK light" size="2">2.- Who is the leader?</font></h2>
+	<input type="checkbox" id="b1"><font face="Louis George Cafe">I.N</font><br>
+	<input type="checkbox" id="b2"><font face="Louis George Cafe">Felix</font><br>
+	<input type="checkbox" id="b3"><font face="Louis George Cafe">Bang Chan</font><br>
+	<input type="checkbox" id="b4"><font face="Louis George Cafe">Han</font><br>
+	<div id=pre2></div>
+
+    <br>
+
+    <img height="200" width="200" src="https://i.pinimg.com/564x/62/7b/03/627b03d1f995504b621ba307a37846fa.jpg">
+	<h2><font face="LEMON MILK light" size="2">3.- When it was their debut?</font></h2>
+	<input type="checkbox" id="c1"><font face="Louis George Cafe">July 15 2020</font><br>
+	<input type="checkbox" id="c2"><font face="Louis George Cafe">January 24 2017</font><br>
+	<input type="checkbox" id="c3"><font face="Louis George Cafe">May 12 2016</font><br>
+	<input type="checkbox" id="c4"><font face="Louis George Cafe">March 25 2018</font><br>
+	<div id=pre3></div>
+
+    <br>
+
+    <img height="200" width="200" src="C:\Users\erika\Downloads\hyunjinamericano.png">
+    <h2><font face="LEMON MILK light" size="2">4.- Who is the member who said <i>"Americano chowa chowa"?</font></i></h2>
+	<input type="checkbox" id="d1"><font face="Louis George Cafe">Han</font><br>
+	<input type="checkbox" id="d2"><font face="Louis George Cafe">Hyunjin</font><br>
+	<input type="checkbox" id="d3"><font face="Louis George Cafe">Seungmin</font><br>
+	<input type="checkbox" id="d4"><font face="Louis George Cafe">Lee know</font><br>
+	<div id=pre4></div>
+
+    <br>
+
+    <img height="200" width="200" src="https://i.pinimg.com/564x/38/80/c6/3880c67074c702cc34da3b4ea51a69b2.jpg">
+	<h2><font face="LEMON MILK light" size="2">5.- Stray Kids have actually...?</font></h2>
+	<input type="checkbox" id="e1"><font face="Louis George Cafe">5 members</font><br>
+	<input type="checkbox" id="e2"><font face="Louis George Cafe">9 members</font><br>
+	<input type="checkbox" id="e3"><font face="Louis George Cafe">8 members</font><br>
+	<input type="checkbox" id="e4"><font face="Louis George Cafe">6 members</font><br>
+	<div id=pre5></div>
+
+    <br>
+
+    <img height="200" width="200" src="C:\Users\erika\Downloads\crybaby.png">
+    <h2><font face="LEMON MILK light" size="2">6.- Which one of these members was eliminated from the survival program?</font></h2>
+	<input type="checkbox" id="f1"><font face="Louis George Cafe">I.N</font><br>
+	<input type="checkbox" id="f2"><font face="Louis George Cafe">Felix</font><br>
+	<input type="checkbox" id="f3"><font face="Louis George Cafe">Bang Chan</font><br>
+	<input type="checkbox" id="f4"><font face="Louis George Cafe">Han</font><br>
+	<div id=pre6></div>
+
+    <br>
+
+    <img height="200" width="200" src="https://i.pinimg.com/564x/0a/e9/a5/0ae9a5f35f79a84cfc4dbc3b7fc8f6e9.jpg">
+	<h2><font face="LEMON MILK light" size="2">7.- Hyunjin is...</font></h2>
+	<input type="checkbox" id="g1"><font face="Louis George Cafe">Dancer</font><br>
+	<input type="checkbox" id="g2"><font face="Louis George Cafe">Vocal</font><br>
+	<input type="checkbox" id="g3"><font face="Louis George Cafe">Raper</font><br>
+	<div id=pre7></div>
+
+    <br>
+
+    <img height="200" width="200" src="https://i.pinimg.com/564x/80/82/0c/80820ca7d6ef3f0f6cf8cfc0d8315421.jpg">
+    <h2><font face="LEMON MILK light" size="2">8.- Which song was in the top 1 on your album chart in June 2022?</font></h2>
+	<input type="checkbox" id="h1"><font face="Louis George Cafe">Maniac</font><br>
+	<input type="checkbox" id="h2"><font face="Louis George Cafe">Venom</font><br>
+	<input type="checkbox" id="h3"><font face="Louis George Cafe">God's menu</font><br>
+	<input type="checkbox" id="h4"><font face="Louis George Cafe">Ex</font><br>
+	<div id=pre8></div>
+
+    <br>
+
+    <button onclick="preguntas()"><font face="LEMON MILK light" size="2">Resultados</font></button>
+</center>
+<br><br><br>
+	<hr>
+	<!--Se adjuntan las redes sociales del artista-->
+    <ul class="redes">
+                <li>
+                    <a href="https://www.instagram.com/realstraykids" target="blank"><img width="25" height="25" alt="INSTAR" src="https://straykids.jype.com/Content/Pc/images/common/sns_instagram_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Stray_Kids" target="blank"><img width="25" height="25" alt="TWITER" src="https://straykids.jype.com/Content/Pc/images/common/sns_twitter_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://web.facebook.com/JYPEStrayKids" target="blank"><img width="25" height="25" alt="FACEBOOK" src="https://straykids.jype.com/Content/Pc/images/common/sns_facebook_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/StrayKids" target="blank"><img width="25" height="25" alt="YOUTUBE" src="https://straykids.jype.com/Content/Pc/images/common/sns_youtube_b.png"></a>
+                </li>
+    </ul>
+
+</body>
+</html>

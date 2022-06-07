@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile: members</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=2">
+	<img src="https://lv2-cdn.azureedge.net/straykids/cbc5d19a62f94f5ea370a9025bf61e89-%EC%9E%90%EC%82%B0%201.png" class="skzlogo" WIDTH=80 HEIGHT=50>
+    
+  <link rel="shortcut icon" href="https://lv2-cdn.azureedge.net/straykids/cbc5d19a62f94f5ea370a9025bf61e89-%EC%9E%90%EC%82%B0%201.png"/>
+
+	<title>&#128147;Discovering Stray Kids&#128147;</title>
+
+
+    <script>
+        window.onload=function(){alert('Welcome STAY!! By clicking one time in the picture you can see the members!! Why don´t you try it?');}
+        window.onunload=function(){alert('THANKS FOR VISITING');}
+    </script>
+
+    <style type="text/css">
+       img.skzlogo {
+  float: left;
+  margin-right: 100px;
+  margin-left: 20px;
+
+  }
+  /*clase del menú, es para que el menu se vea de manera horizontal*/
+	ul.horizontal li{
+	display:block;
+	float:left;
+	padding: 10px;
+}
+    </style>
+
+     <!--código para el menú-->
+	<ul class="horizontal" align=center>
+    <li><a href="C:\Users\erika\Downloads\proyecto.html"><font face="LEMON MILK light" color="black">HOME</font></a></li>
+    <li><a href="C:\Users\erika\Downloads\albumes.html"><font face="LEMON MILK light">DISCOGRAPHY</font></a></li>
+    <li><a href="C:\Users\erika\Downloads\members.html"><font face="LEMON MILK light">MEMBERS</font></a></li>
+    <li><a href="C:\Users\erika\Downloads\formulario.html"><font face="LEMON MILK light">QUIZ</font></a></li>
+</ul>
+<br><br>	
+<hr>
+     <br><br>
+	<!--aqui se pone un <div> para poder cambiar el texto con el nombre del integrante desde javascript conectandolos con el id="titulo" -->
+    <center><font face="LEMON MILK light" size=5 color="#000000"><b>Members</b></font><br><br><br>	
+    
+    	<script type="text/javascript"> 
+		//se asignan variables con objetos tipo Image que se crean invocando new Image(), con esto ahora podemos poner imagenes 
+		var imagen1=new Image 
+		//en la variable ponemos la url de la imagen que queremos, se puede url desde el navegador o desde documentos, y hago esto con todos los integrantes 
+		imagen1.src="https://lv2-cdn.azureedge.net/straykids/0b23700a150b4d988f8489648c3d4fe1-1.jpg" 
+        //El atributo src contiene una ruta que apunta a la imagen que quieres poner en la página, que puede ser una URL relativa o absoluta (Las rutas absolutas funcionan mejor cuando no se mueven los datos, que es lo habitual en los equipos personales. Las rutas relativas funcionan mejor al entregar documentos de datos a otro usuario), de la misma forma que el elemento <a> contiene los valores del atributo href.
+		var imagen2=new Image 
+		imagen2.src="https://lv2-cdn.azureedge.net/straykids/86ed493fe4eb4e4d85b90b57579cd9ba-2.jpg" 
+
+		var imagen3=new Image
+		imagen3.src="https://lv2-cdn.azureedge.net/straykids/a07931e6c028432799276a241acf9db3-3.jpg"
+
+		var imagen4=new Image
+		imagen4.src="https://lv2-cdn.azureedge.net/straykids/1bafa0c7a39047f9bab7626a9ec4a31e-4.jpg"
+
+		var imagen5=new Image
+		imagen5.src="https://lv2-cdn.azureedge.net/straykids/4bcd0fe180444da1a7e7908a8db0f82d-5.jpg"
+
+		var imagen6=new Image
+		imagen6.src="https://lv2-cdn.azureedge.net/straykids/a7fc9f09f52b43b7abb5508915696a06-6.jpg"
+
+		var imagen7=new Image
+		imagen7.src="https://lv2-cdn.azureedge.net/straykids/b64e3756cfb947c4aeb94c56eb1532ac-7.jpg"
+
+		var imagen8=new Image
+		imagen8.src="https://lv2-cdn.azureedge.net/straykids/3a64bea9f7bd4bfdb979f2f6799b5993-8.jpg"
+
+        //se asigna una variable que va a servir como contador para el if else a la hora de querer cambiar de integrante con el click
+		var i=1; 
+		//se hace un función que se va a activar con el click 
+		function group() {
+			if (i == 1) {
+				//se pone una condición y cuando se cumpla se llevará acabo el proceso,la propiedad de images es un array que contiene todos los objetos que aparecen dentro del documento HTML al usar la etiqueta en este caso 'members' que es el nombre que le dimos a la imagen 1 que cambiara dependiendo de la variable que se ponga.
+				document.images['members'].src=imagen1.src;
+				//aqui se le suma un número a la variable para que se pueda hacer else if y que se haga un tipo ciclo
+				i=2;
+				document.getElementById("titulo").innerHTML="BANG CHAN";
+				//se agarra del id del div de arriba llamado "titulo" y con el inner.HTML="" podemos manipular en contenido del div aqui le puse el nombre del primer integrante y hago lo mismo con los demas integrantes para que cuando se cambie la imagen tambien el nombre.
+   
+				}else if (i==2){
+				//aqui ponemos la condición donde con i=2 podemos cumplirla y hacer lo que se ve a continucación 
+				document.images['members'].src=imagen2.src;
+				i=3; 
+		        document.getElementById("titulo").innerHTML="LEE KNOW";
+		        document.getElementById("des").innerHTML="HOLSALSSSAS";
+
+		        
+			    }else if (i==3){ 
+			    	document.images['members'].src=imagen3.src; 
+			    	i=4; 
+			    document.getElementById("titulo").innerHTML="CHANGBIN";
+			    
+                }else if (i == 4){
+			     	document.images['members'].src=imagen4.src;
+			     	i=5;
+			  		document.getElementById("titulo").innerHTML="HYUNGJIN";
+			  		
+			    }else if (i==5){
+			    	document.images['members'].src=imagen5.src;
+			    	i=6;
+					document.getElementById("titulo").innerHTML="HAN";
+					
+			    }else if (i==6){
+			    	document.images['members'].src=imagen6.src;
+			    	i=7;
+					document.getElementById("titulo").innerHTML="FELIX";
+					
+			    } else if(i==7){
+			    	document.images['members'].src=imagen7.src;
+			    	i=8;
+     				document.getElementById("titulo").innerHTML="SEUNGMIN";
+     				
+			    } else if(i==8){
+			    	document.images['members'].src=imagen8.src;
+			    	i=1;
+			    	//aqui se pone un 1 en la varible i para que se haga un ciclo y se vuelvan a repetir infinitamente las imagenes 
+					document.getElementById("titulo").innerHTML="I.N";
+					
+			    }
+			}
+
+    </script>
+</head>
+<body>
+
+    
+    <div id=des></div>
+	<!--esta es la primera imágen y la que se va a manipular se le pone el src="" con la primera imágen y se le pone el name o el id no afecta aqui, es practicamente lo mismo, con el document.images['members'].src=imagen#.src; ahora manipulamos la imagen y podemos cambiarla a la que queramos con las variables imagen que se declararon antes, onclik="group()" cada vez que se haga un click la function se ejecutara-->
+    <img width="455" height="580" src="https://lv2-cdn.azureedge.net/straykids/0b23700a150b4d988f8489648c3d4fe1-1.jpg" name="members" onclick="group()">
+    </center> 
+  	<style type="text/css">
+
+    /*Margen de la página*/
+		body {
+  margin-left: px;
+  margin-right: px;
+  margin-top: px;
+  margin-bottom: px;
+  /*tamaño de la pagina*/
+  height: 800px;
+}
+  
+  /*es pára que los links no salgan subrayados ni azules*/
+a { text-decoration: none; 
+    color: black;} 
+
+    ul.redes li{
+    list-style: none;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+	</style>  
+<br><br><br>
+<hr>
+    <ul class="redes">
+                <li>
+                    <a href="https://www.instagram.com/realstraykids" target="blank"><img width="25" height="25" alt="INSTAR" src="https://straykids.jype.com/Content/Pc/images/common/sns_instagram_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Stray_Kids" target="blank"><img width="25" height="25" alt="TWITER" src="https://straykids.jype.com/Content/Pc/images/common/sns_twitter_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://web.facebook.com/JYPEStrayKids" target="blank"><img width="25" height="25" alt="FACEBOOK" src="https://straykids.jype.com/Content/Pc/images/common/sns_facebook_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/StrayKids" target="blank"><img width="25" height="25" alt="YOUTUBE" src="https://straykids.jype.com/Content/Pc/images/common/sns_youtube_b.png"></a>
+                </li>
+    </ul>
+</body>
+</html>
